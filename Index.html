@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur Css</title>
+</head>
+<body>
+    <h1 class="titre">Générateur CSS Filter</h1>
+    <div class="contain">
+        <div class="option">
+            <div style="display: flex; width: 1200px;">
+                <h1 class="titre" style="width: 50%;">Filter Option</h1>
+                <h1 class="titre" style="width: 20%;">Code CSS :</h1><input class="barre" readonly type="text" value="Default" id="myInput">
+                <button class="bouton" onclick="copier()">Copier</button>
+            </div>
+            <!--Div contenant tout les sliders-->
+            <div>
+                <!--Div contenant Un slider-->
+                <div class="divslider">
+                    <h2 class="filtre">Grayscale</h2>
+                    <input type="range" onchange="changepercent()" min="0" max="100" value="0" class="slider" id="myRange">
+                    <h3 class="per" id="pourcent">50%</h3>
+                </div>
+                <div class="divslider">
+                    <h2 class="filtre">Sepia</h2>
+                    <input type="range" onchange="changepercent()" min="0" max="100" value="0" class="slider" id="myRange1">
+                    <h3 class="per" id="pourcent1">50%</h3>
+                </div>
+                <div class="divslider">
+                    <h2 class="filtre">Blur</h2>
+                    <input type="range" onchange="changepercent()" min="0" max="100" value="0" class="slider" id="myRange2">
+                    <h3 class="per" id="pourcent2">50%</h3>
+                </div>
+                <div class="divslider">
+                    <h2 class="filtre">Brightness</h2>
+                    <input type="range" onchange="changepercent()" min="0" max="100" value="100" class="slider" id="myRange3">
+                    <h3 class="per" id="pourcent3">50%</h3>
+                </div>
+                <div class="divslider">
+                    <h2 class="filtre">Hue Rotate</h2>
+                    <input type="range" onchange="changepercent()" min="0" max="100" value="0" class="slider" id="myRange4">
+                    <h3 class="per" id="pourcent4">50%</h3>
+                </div>
+                <div class="divslider">
+                    <h2 class="filtre">Saturate</h2>
+                    <input type="range" onchange="changepercent()" min="0" max="100" value="100" class="slider" id="myRange5">
+                    <h3 class="per" id="pourcent5">50%</h3>
+                </div>
+            </div>
+        </div>
+        <div class="divimage">
+            <img src="image-test.jpg" id="img" alt="Image Demo pour Filter CSS Effects">
+        </div>
+    </div>
+    <div>
+
+    </div>
+</body>
+<script src="scriptt.js"></script>
+</html>
